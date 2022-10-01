@@ -173,10 +173,10 @@ body {
 
 /* INICIO ESTILOS MAIN QUESTIONS */
 .main__questions {
-    background-image: url(/Carpinteria/Multimedia/fondoCarpinteria1.jpeg);
+    background-image: url(/Multimedia/fondoCarpinteria1.jpeg);
     background-repeat: no-repeat;
     background-position: center center;
-    background-size: cover; 
+    background-size: cover;
 }
 
 .main__questions-section {
@@ -572,7 +572,7 @@ body {
         gap: 20px;
     }
 
-    .row-span{
+    .row-span {
         grid-row: span 2;
     }
 
