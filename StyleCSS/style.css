@@ -81,7 +81,7 @@ body {
 .main__know-title {
     color: #d7a86e;
     padding: 1%;
-    font-size: 20px;
+    font-size: 18px;
 }
 
 .main__know-inf {
@@ -114,7 +114,7 @@ body {
 .main__know-subtitle {
     color: #d7a86e;
     padding: 1%;
-    font-size: 18px;
+    font-size: 16px;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -127,7 +127,7 @@ body {
     color: #fcfce6;
     padding: 2%;
     text-align: center;
-    font-size: 13px;
+    font-size: 12px;
     letter-spacing: 1px;
     word-spacing: 2px;
 }
