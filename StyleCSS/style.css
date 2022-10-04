@@ -173,7 +173,7 @@ body {
 
 /* INICIO ESTILOS MAIN QUESTIONS */
 .main__questions {
-    background-image: url(/Multimedia/fondoCarpinteria1.jpeg);
+    background-image: url(../Multimedia/fondoCarpinteria1.jpeg);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
