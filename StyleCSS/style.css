@@ -159,7 +159,7 @@ body {
 }
 
 .carrousel__mult img,
-.carrousel__mult video {
+.carrousel__mult iframe{
     width: 100%;
     height: 100%;
     padding: 2%;
