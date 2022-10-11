@@ -1,0 +1,93 @@
+.main__know{
+    background-color: #8e3200;
+    padding: 1% 0%;
+    display: flex;
+    flex-direction: column;
+    @media only screen and (min-width:768px) {
+        display: flex;
+        flex-direction: row;
+    }
+    .main__know-section{
+        width: 100%;
+        padding: 2%;   
+        .main__know-title{
+            color: #d7a86e;
+            padding: 1%;
+            font-size: 18px;
+            @media only screen and (min-width:481px) and (max-width:767px)
+             {
+                font-size: 25px; }
+                @media only screen and (min-width:768px) 
+                {
+                    font-size: 30px;
+                }
+            }
+        }
+     .main__know-inf{
+            color: #fcfce6;
+            padding: 2%;
+            font-size: 16px;
+            letter-spacing: 1px;
+            word-spacing: 2px;
+            @media only screen and (min-width:481px) and (max-width:767px) {
+                font-size: 18px;
+                letter-spacing: 1px;
+                word-spacing: 3px;}
+                @media only screen and (min-width:768px) { 
+                     font-size: 20px;
+                    letter-spacing: 2px;
+                    word-spacing: 4px;
+                }
+            }
+    
+    .main__know-sec{
+        width: 100%;
+    display: flex;
+    flex-direction: column;
+        .main__know-div{
+            display: flex;
+    justify-content: space-around;
+            img{
+                width: 30%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border: solid 10px white;
+        }}
+        .main__know-subtitle{
+            color: #d7a86e;
+    padding: 1%;
+    font-size: 16px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 2%;
+    @media only screen and (min-width:481px) and (max-width:767px) {
+        font-size: 22px;
+    }
+    @media only screen and (min-width:768px) {
+        font-size: 24px;
+    }
+        }
+        .main__know-article{
+            width: 60%;
+            color: #fcfce6;
+            padding: 2%;
+            text-align: center;
+            font-size: 12px;
+            letter-spacing: 1px;
+            word-spacing: 2px;
+            @media only screen and (min-width:481px) and (max-width:767px) {
+                font-size: 18px;
+        letter-spacing: 1px;
+        word-spacing: 3px;
+            }
+            @media only screen and (min-width:768px) {
+                font-size: 20px;
+                letter-spacing: 1px;
+                word-spacing: 4px;
+            }
+        }
+    }
+}

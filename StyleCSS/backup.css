@@ -539,15 +539,15 @@ input:focus{
 /*DESKTOP*/
 @media only screen and (min-width:768px) {
 
-    /* INDEX*/
-    .carousel-cel {
-        display: none;
-    }
-
     /*HEADER*/
     .menu {
         font-size: 20px;
         letter-spacing: 2px;
+    }
+    
+     /* INDEX*/
+     .carousel-cel {
+        display: none;
     }
 
     /*KNOW*/

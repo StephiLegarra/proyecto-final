@@ -1,0 +1,58 @@
+.main__questions{
+    background-image: url(/Multimedia/fondoCarpinteria1.jpeg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    .main__questions-section{
+        width: 100%;
+    padding: 4%;
+    .main__questions-title{
+        color: #6d390b;
+        font-size: 18px;
+        padding-bottom: 4%;
+        letter-spacing: 1.5px;
+        word-spacing: 4px;
+        font-weight: bold;
+        text-align: center;
+        text-decoration: underline;
+        @media only screen and (min-width:481px) and (max-width:767px) {
+            font-size: 20px;
+        letter-spacing: 3px;}
+        @media only screen and (min-width:768px) {
+            font-size: 24px;
+            letter-spacing: 2px;
+            word-spacing: 5px;
+    }}
+
+
+    .main__questions-quest {
+        color: #6d2702;
+        font-size: 16px;
+        padding-bottom: 2%;
+        letter-spacing: 1.5px;
+        word-spacing: 3px;
+        font-weight: bold;
+        @media only screen and (min-width:481px) and (max-width:767px) {
+            font-size: 16px;
+            letter-spacing: 1.5px; }
+    @media only screen and (min-width:768px) {
+        font-size: 22px;
+        letter-spacing: 2px;
+        word-spacing: 4px;}
+    }
+    .main__questions-answer{
+        color: #2c1103;
+        font-size: 14px;
+        padding-bottom: 2%;
+        letter-spacing: 1.5px;
+        word-spacing: 4px;  
+        @media only screen and (min-width:481px) and (max-width:767px) {
+            font-size: 16px;
+            letter-spacing: 1.5px;  }
+    @media only screen and (min-width:768px) {
+        font-size: 20px;
+        letter-spacing: 2px;
+        word-spacing: 4px;}
+    }
+    }
+}

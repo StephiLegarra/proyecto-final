@@ -1,0 +1,26 @@
+header{
+    background-color: #fcfce6;
+    nav{
+        div{
+            a{
+    .menu-logo{
+        width: 90%;
+        height: auto;
+    }
+             }
+    .menu{
+        @media screen and (min-width:768px) {
+            font-size: 20px;
+            letter-spacing: 2px;
+        }
+    .menu-option{
+        color: #8e3200;
+    &:hover{
+        border: solid 2px #8e3200;
+        color: black;
+    }
+}
+}
+    }
+    }
+}

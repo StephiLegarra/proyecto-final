@@ -1,0 +1,25 @@
+.main__index{
+    background-color: #8e3200;
+    padding: 2%;
+    .section__vid{
+        border: solid 3px #d7a86e;
+        padding: 1%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        video{
+            width: 100%;
+            height: auto;
+        }
+    }
+   .carousel-cel{
+        padding-top: 15px;
+        padding-bottom: 20px;
+        width: 90%;
+        margin: 0 auto;
+        @media screen and (min-width:768px){   
+                display: none;
+        }
+   }
+}
+

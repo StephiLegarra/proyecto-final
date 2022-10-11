@@ -1,0 +1,141 @@
+.footer{
+    background-color: #fcfce6;
+    div{
+        .slogan{
+            width: 100%;
+            padding: 1% 2%;
+            color: #fcfce6;
+            background-color: #d7a86e;
+            font-size: 14px;
+            letter-spacing: 2px;
+            word-spacing: 3px;
+            display: flex;
+            justify-content: center;
+            @media screen and (min-width:481px) and (max-width:767px){
+                font-size: 16px;
+                letter-spacing: 3px;
+                word-spacing: 5px;
+            }
+            @media screen and (min-width:768px) {
+                font-size: 18px;
+                letter-spacing: 4px;
+                word-spacing: 6px;
+            }
+
+        }
+    }
+    .nav__footer{
+        display: flex;
+        justify-content: space-between;
+        .title{
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            .contact__title{
+                font-size: 14px;
+                font-weight: bold;
+                color: #8e3200;
+                padding: 2% 4%;
+                text-decoration: underline;
+                @media screen and (min-width:481px) and (max-width:767px){
+                    font-size: 16px;}
+                    @media screen and (min-width:768px) {
+                        font-size: 18px;
+                    }
+            }
+            ul{
+                .contact__fact{
+                    list-style: none;
+                    font-size: 12px;
+                    color: black;
+                    padding: 2%;
+                    display: flex;
+                    justify-content: start;
+                    text-align: start;
+                    img{
+                    width: 10%;
+                    height: auto;
+                    padding-right: 2%;
+                        }
+                    @media screen and (min-width:481px) and (max-width:767px){
+                            font-size: 14px;}
+                    @media screen and (min-width:768px) {
+                            font-size: 16px;}
+                }
+                }
+            .networks{
+                display: none;
+                @media screen and (min-width:481px) and (max-width:767px){
+                    display: flex;
+                    align-content: center;
+                    justify-content: center;}
+                @media screen and (min-width:768px) {
+                    display: flex;
+                    align-content: center;
+                    justify-content: center;}    
+            }
+            .networks__redes{
+                width: auto;
+                display: flex;
+                flex-direction: column;
+                @media screen and (min-width:481px) and (max-width:767px){
+                    width: auto;
+                    padding-left: 25%;
+                    display: flex;
+                    flex-direction: row;}
+                @media screen and (min-width:768px) {
+                    width: auto;
+                    padding-left: 25%;
+                    display: flex;
+                    flex-direction: row;}    
+                img{
+                    width: 25%;
+                    padding: 1%;
+                    position: relative;
+                    left: 70%;
+                 &:hover{
+                    transform: scale(1.5);
+                }
+                @media screen and (min-width:481px) and (max-width:767px){
+                    width: 35%;
+                    padding: 0%;
+                    position: relative;
+                    left: 0%;}
+               @media screen and (min-width:768px) {
+                width: 35%;
+                padding: 0%;
+                position: relative;
+                left: 0%;}    
+            }
+
+            }
+            .networks__wa{
+                   img{
+                    width: 15%;
+                    position: fixed;
+                    bottom: 1%;
+                    right: 1%;
+                 &:hover{
+                    transform: scale(1.5);
+                    transition: all 1s linear;
+                   }
+                   @media screen and (min-width:481px){
+                    width: 5%;}    
+                }
+            }
+            }
+        }
+         .copyright{
+            margin-bottom: 0%;
+            font-size: 12px;
+            font-weight: lighter;
+            color: #6d390b;
+            text-align: center;
+            @media screen and (min-width:481px) and (max-width:767px){
+                font-size: 12px;}
+                @media screen and (min-width:768px){
+                    font-size: 14px;}   
+         }
+        }
+        
+

@@ -1,0 +1,161 @@
+.main__contact{
+    width: 100%;
+    background-color: #8e3200;
+    .main__contact-text{
+        color: #fcfce6;
+        padding: 2%;
+        font-size: 14px;
+        letter-spacing: 1px;
+        word-spacing: 4px;
+        @media only screen and (min-width:481px) and (max-width:767px) {
+            width: 100%;
+            font-size: 16px;
+        }
+        @media only screen and (min-width:768px) {
+            width: 70%;
+        font-size: 20px;
+    }
+    }
+    .main__contact-div{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        @media only screen and (min-width:481px) and (max-width:767px) {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        @media only screen and (min-width:768px) {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+    }
+        .main__contact-contact{
+            @media only screen and (min-width:481px) and (max-width:767px) {
+                width: 80%;
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: column;
+            }
+            @media only screen and (min-width:768px) {
+                width: 50%;
+                display: flex;
+                justify-content: flex-start;
+                flex-direction: column;
+        }
+            .main__contact-title{
+                color: #d7a86e;
+                padding: 2%;
+                font-size: 14px;
+                display: flex;
+                justify-content: space-around;
+                flex-direction: row;
+                @media only screen and (min-width:481px) and (max-width:767px) {
+                    padding: 2%;
+                    font-size: 16px;
+                    display: flex;
+                    justify-content: space-around;
+                    flex-direction: row;
+                }
+                @media only screen and (min-width:768px) {
+                    font-size: 20px;
+                }
+
+            }
+            .main__contact-formulary{
+                list-style: none;
+    height: 80%;
+    @media only screen and (min-width:481px) and (max-width:767px) {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+    @media only screen and (min-width:768px) {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+    input{
+        outline: none;
+        &:focus{
+            border: solid 4px #d7a86e;
+            border-radius: 5px;
+        }
+    }
+            }
+            .main__contact-thanks{
+                color: #fcfce6;
+    text-align: center;
+    padding: 2%;
+    font-size: 14px;
+    letter-spacing: 1px;
+    word-spacing: 4px;
+    &:hover::after{
+        content:"🧡";
+    }
+    @media only screen and (min-width:481px) and (max-width:767px) {
+        font-size: 16px;
+    }
+    @media only screen and (min-width:768px) {
+        font-size: 20px;
+    }
+            }
+        }
+
+    .main__contact-ubic{
+        padding: 2%;
+    padding-left: 6%;
+    width: 90%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    @media only screen and (min-width:481px) and (max-width:767px) {
+        width: 50%;
+        padding: 1%;
+        display: flex;
+        align-items: center;
+    }
+    @media only screen and (min-width:768px) {
+        width: 40%;
+        padding-top: 0%;
+        padding-left: 1%;
+        display: flex;
+        justify-content: flex-start;
+    }
+      .main__contact-title{
+                color: #d7a86e;
+                padding: 2%;
+                font-size: 14px;
+                display: flex;
+                justify-content: space-around;
+                flex-direction: row;
+                @media only screen and (min-width:481px) and (max-width:767px) {
+                    padding: 2%;
+                    font-size: 16px;
+                    display: flex;
+                    justify-content: space-around;
+                    flex-direction: row;
+                }
+                @media only screen and (min-width:768px) {
+                    font-size: 20px;
+                }
+            }
+        .main__contact-direc{
+            padding: 2%;
+            color: #d7a86e;
+            font-size: 12px;
+            @media only screen and (min-width:481px) and (max-width:767px) {
+                font-size: 14px;
+            }
+            @media only screen and (min-width:768px) {
+                font-size: 16px;
+            }
+        }    
+        
+
+    }
+    }
+}
