@@ -1,3 +1,6 @@
+@import '../base/variables';
+@import '../base/listas';
+
 .main__questions{
     background-image: url(/Multimedia/fondoCarpinteria1.jpeg);
     background-repeat: no-repeat;
@@ -7,54 +10,48 @@
         width: 100%;
     padding: 4%;
     .main__questions-title{
-        color: #6d390b;
-        font-size: 18px;
+        color: nth($colores,2);
+        font-size: nth($font-size,4);
         padding-bottom: 4%;
-        letter-spacing: 1.5px;
-        word-spacing: 4px;
+        letter-spacing: nth($letter-spacing,1);
+        word-spacing: nth($word-spacing,2);
         font-weight: bold;
         text-align: center;
         text-decoration: underline;
         @media only screen and (min-width:481px) and (max-width:767px) {
-            font-size: 20px;
-        letter-spacing: 3px;}
+            font-size: nth($font-size,5);
+        letter-spacing: nth($letter-spacing,2);}
         @media only screen and (min-width:768px) {
-            font-size: 24px;
-            letter-spacing: 2px;
-            word-spacing: 5px;
+            font-size: nth($font-size,6);
+            letter-spacing: nth($letter-spacing,3);
+            word-spacing: nth($word-spacing,3);
     }
 }
 
-
     .main__questions-quest {
-        color: #6d2702;
-        font-size: 16px;
+        color: nth($colores,2);
+        font-size: nth($font-size,2);
         padding-bottom: 2%;
-        letter-spacing: 1.5px;
-        word-spacing: 3px;
+        letter-spacing: nth($letter-spacing,1);
+        word-spacing:  nth($word-spacing,1);
         font-weight: bold;
         @media only screen and (min-width:481px) and (max-width:767px) {
-            font-size: 16px;
-            letter-spacing: 1.5px; }
+            font-size: nth($font-size,3); }
     @media only screen and (min-width:768px) {
-        font-size: 22px;
-        letter-spacing: 2px;
-        word-spacing: 4px;}
+        font-size: nth($font-size,5);
+        word-spacing:  nth($word-spacing,2);}
     }
     
     .main__questions-answer{
-        color: #2c1103;
-        font-size: 14px;
+        color: nth($colores,5);
+        font-size: nth($font-size,2);
         padding-bottom: 2%;
-        letter-spacing: 1.5px;
-        word-spacing: 4px;  
+        letter-spacing: nth($letter-spacing,1);
+        word-spacing:  nth($word-spacing,2);  
         @media only screen and (min-width:481px) and (max-width:767px) {
-            font-size: 16px;
-            letter-spacing: 1.5px;  }
+            font-size: nth($font-size,3); }
     @media only screen and (min-width:768px) {
-        font-size: 20px;
-        letter-spacing: 2px;
-        word-spacing: 4px;}
+        font-size: nth($font-size,5);}
     }
     }
 }

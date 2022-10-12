@@ -1,19 +1,21 @@
+@import '../base/variables';
+@import '../base/listas';
+
 .main__contact{
     width: 100%;
-    background-color: #8e3200;
+    background-color: $bg-color-pages;
     .main__contact-text{
-        color: #fcfce6;
+        color: nth($colores,1);
         padding: 2%;
-        font-size: 14px;
-        letter-spacing: 1px;
-        word-spacing: 4px;
+        font-size: nth($font-size,2);
+        letter-spacing: nth($letter-spacing,1);
+        word-spacing: nth($word-spacing,2);
         @media only screen and (min-width:481px) and (max-width:767px) {
-            width: 100%;
-            font-size: 16px;
+            font-size: nth($font-size,3);
         }
         @media only screen and (min-width:768px) {
             width: 70%;
-        font-size: 20px;
+            font-size: nth($font-size,5);
     }
     }
     .main__contact-div{
@@ -44,62 +46,53 @@
                 flex-direction: column;
         }
             .main__contact-title{
-                color: #d7a86e;
+                color: nth($colores,3);
                 padding: 2%;
-                font-size: 14px;
+                font-size: nth($font-size,2);
                 display: flex;
                 justify-content: space-around;
                 flex-direction: row;
                 @media only screen and (min-width:481px) and (max-width:767px) {
-                    padding: 2%;
-                    font-size: 16px;
-                    display: flex;
-                    justify-content: space-around;
-                    flex-direction: row;
+                    font-size: nth($font-size,3);
                 }
                 @media only screen and (min-width:768px) {
-                    font-size: 20px;
+                    font-size: nth($font-size,5);
                 }
 
             }
             .main__contact-formulary{
                 list-style: none;
-    height: 80%;
-    @media only screen and (min-width:481px) and (max-width:767px) {
+               height: 80%;
+              @media only screen and (min-width:481px) {
         display: flex;
         justify-content: center;
         flex-direction: column;
         align-items: center;
     }
-    @media only screen and (min-width:768px) {
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        align-items: center;
-    }
+ 
     input{
         outline: none;
         &:focus{
-            border: solid 4px #d7a86e;
+            border: solid 4px nth($colores,3);
             border-radius: 5px;
         }
     }
             }
             .main__contact-thanks{
-                color: #fcfce6;
+                color: nth($colores,1);
     text-align: center;
     padding: 2%;
-    font-size: 14px;
-    letter-spacing: 1px;
-    word-spacing: 4px;
+    font-size: nth($font-size,2);
+    letter-spacing: nth($letter-spacing,1);
+    word-spacing: nth($word-spacing,2);
     &:hover::after{
         content:"🧡";
     }
     @media only screen and (min-width:481px) and (max-width:767px) {
-        font-size: 16px;
+        font-size: nth($font-size,3);
     }
     @media only screen and (min-width:768px) {
-        font-size: 20px;
+        font-size: nth($font-size,5);
     }
             }
         }
@@ -126,32 +119,28 @@
         justify-content: flex-start;
     }
       .main__contact-title{
-                color: #d7a86e;
+                color: nth($colores,3);
                 padding: 2%;
-                font-size: 14px;
+                font-size: nth($font-size,2);
                 display: flex;
                 justify-content: space-around;
                 flex-direction: row;
                 @media only screen and (min-width:481px) and (max-width:767px) {
-                    padding: 2%;
-                    font-size: 16px;
-                    display: flex;
-                    justify-content: space-around;
-                    flex-direction: row;
+                    font-size: nth($font-size,3);
                 }
                 @media only screen and (min-width:768px) {
-                    font-size: 20px;
+                    font-size: nth($font-size,5);
                 }
             }
         .main__contact-direc{
             padding: 2%;
-            color: #d7a86e;
-            font-size: 12px;
+            color: nth($colores,3);
+            font-size: nth($font-size,1);
             @media only screen and (min-width:481px) and (max-width:767px) {
-                font-size: 14px;
+                font-size: nth($font-size,2);
             }
             @media only screen and (min-width:768px) {
-                font-size: 16px;
+                font-size: nth($font-size,3);
             }
         }    
         

@@ -1,5 +1,8 @@
+@import '../base/variables';
+@import '../base/listas';
+
 .main__know{
-    background-color: #8e3200;
+    background-color: $bg-color-pages;
     padding: 1% 0%;
     display: flex;
     flex-direction: column;
@@ -11,32 +14,30 @@
         width: 100%;
         padding: 2%;   
         .main__know-title{
-            color: #d7a86e;
+            color: nth($colores,3);
             padding: 1%;
-            font-size: 18px;
+            font-size: nth($font-size,4);
             @media only screen and (min-width:481px) and (max-width:767px)
              {
-                font-size: 25px; }
+                font-size: nth($font-size,6); }
                 @media only screen and (min-width:768px) 
                 {
-                    font-size: 30px;
+                    font-size: nth($font-size,7);
                 }
             }
         }
      .main__know-inf{
-            color: #fcfce6;
+            color: nth($colores,1);
             padding: 2%;
-            font-size: 16px;
-            letter-spacing: 1px;
-            word-spacing: 2px;
+            font-size: nth($font-size,3);
+            letter-spacing: nth($letter-spacing,1);
+            word-spacing: nth($word-spacing,1);
             @media only screen and (min-width:481px) and (max-width:767px) {
-                font-size: 18px;
-                letter-spacing: 1px;
-                word-spacing: 3px;}
+                font-size: nth($font-size,4);
+                word-spacing: nth($word-spacing,2);}
                 @media only screen and (min-width:768px) { 
-                     font-size: 20px;
-                    letter-spacing: 2px;
-                    word-spacing: 4px;
+                    font-size: nth($font-size,5);
+                    word-spacing: nth($word-spacing,3);
                 }
             }
     
@@ -52,41 +53,39 @@
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                border: solid 10px white;
+                border: solid 10px nth($colores,6);
         }}
         .main__know-subtitle{
-            color: #d7a86e;
+            color: nth($colores,3);
     padding: 1%;
-    font-size: 16px;
+    font-size: nth($font-size,3);
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
     padding-top: 2%;
     @media only screen and (min-width:481px) and (max-width:767px) {
-        font-size: 22px;
+        font-size: nth($font-size,5);
     }
     @media only screen and (min-width:768px) {
-        font-size: 24px;
+        font-size: nth($font-size,6);
     }
         }
         .main__know-article{
             width: 60%;
-            color: #fcfce6;
+            color: nth($colores,1);
             padding: 2%;
             text-align: center;
-            font-size: 12px;
-            letter-spacing: 1px;
-            word-spacing: 2px;
+            font-size: nth($font-size,1);
+            letter-spacing: nth($letter-spacing,1);
+            word-spacing: nth($word-spacing,1);
             @media only screen and (min-width:481px) and (max-width:767px) {
-                font-size: 18px;
-        letter-spacing: 1px;
-        word-spacing: 3px;
+                font-size: nth($font-size,4);
+        word-spacing: nth($word-spacing,2);
             }
             @media only screen and (min-width:768px) {
-                font-size: 20px;
-                letter-spacing: 1px;
-                word-spacing: 4px;
+                font-size: nth($font-size,5);
+                word-spacing: nth($word-spacing,3);
             }
         }
     }

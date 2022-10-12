@@ -201,7 +201,7 @@ body {
 }
 
 .main__questions-quest {
-    color: #6d2702;
+    color: #8e3200;
     font-size: 16px;
     padding-bottom: 2%;
     letter-spacing: 1.5px;
@@ -210,7 +210,7 @@ body {
 }
 
 .main__questions-answer {
-    color: #2c1103;
+    color: black;
     font-size: 14px;
     padding-bottom: 2%;
     letter-spacing: 1.5px;
@@ -332,7 +332,7 @@ input:focus{
 .contact__fact {
     list-style: none;
     font-size: 12px;
-    color: #251404;
+    color: black;
     padding: 2%;
     display: flex;
     justify-content: start;

@@ -1,5 +1,8 @@
+@import '../base/variables';
+@import '../base/listas';
+
 header{
-    background-color: #fcfce6;
+    background-color: $bg-color-gener;
     nav{
         div{
             a{
@@ -10,14 +13,14 @@ header{
              }
     .menu{
         @media screen and (min-width:768px) {
-            font-size: 20px;
-            letter-spacing: 2px;
+            font-size: nth($font-size,5);
+            letter-spacing: nth($letter-spacing,1);
         }
     .menu-option{
-        color: #8e3200;
+        color: nth($colores,2);
     &:hover{
-        border: solid 2px #8e3200;
-        color: black;
+        border: solid 2px nth($colores,2);
+        color: nth($colores,5);
     }
 }
 }

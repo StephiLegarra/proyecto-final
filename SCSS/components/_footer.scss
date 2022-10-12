@@ -1,25 +1,28 @@
+@import '../base/variables';
+@import '../base/listas';
+
 .footer{
-    background-color: #fcfce6;
+    background-color: $bg-color-gener;
     div{
         .slogan{
             width: 100%;
             padding: 1% 2%;
-            color: #fcfce6;
-            background-color: #d7a86e;
-            font-size: 14px;
-            letter-spacing: 2px;
-            word-spacing: 3px;
+            color: nth($colores,1);
+            background-color: nth($colores,3);
+            font-size: nth($font-size,1);
+            letter-spacing: nth($letter-spacing,1);
+            word-spacing: nth($word-spacing,1);
             display: flex;
             justify-content: center;
             @media screen and (min-width:481px) and (max-width:767px){
-                font-size: 16px;
-                letter-spacing: 3px;
-                word-spacing: 5px;
+                font-size: nth($font-size,3);
+                letter-spacing: nth($letter-spacing,2);
+                word-spacing: nth($word-spacing,3);
             }
             @media screen and (min-width:768px) {
-                font-size: 18px;
-                letter-spacing: 4px;
-                word-spacing: 6px;
+                font-size: nth($font-size,4);
+                letter-spacing: nth($letter-spacing,3);
+                word-spacing: nth($word-spacing,4);
             }
 
         }
@@ -32,22 +35,22 @@
             display: flex;
             flex-direction: column;
             .contact__title{
-                font-size: 14px;
+                font-size: nth($font-size,2);
                 font-weight: bold;
-                color: #8e3200;
+                color: nth($colores,2);
                 padding: 2% 4%;
                 text-decoration: underline;
                 @media screen and (min-width:481px) and (max-width:767px){
-                    font-size: 16px;}
+                    font-size: nth($font-size,3);}
                     @media screen and (min-width:768px) {
-                        font-size: 18px;
+                        font-size: nth($font-size,4);
                     }
             }
             ul{
                 .contact__fact{
                     list-style: none;
-                    font-size: 12px;
-                    color: black;
+                    font-size: nth($font-size,1);
+                    color: nth($colores,5);
                     padding: 2%;
                     display: flex;
                     justify-content: start;
@@ -58,36 +61,27 @@
                     padding-right: 2%;
                         }
                     @media screen and (min-width:481px) and (max-width:767px){
-                            font-size: 14px;}
+                            font-size: nth($font-size,2);}
                     @media screen and (min-width:768px) {
-                            font-size: 16px;}
+                            font-size: nth($font-size,3);}
                 }
                 }
             .networks{
                 display: none;
-                @media screen and (min-width:481px) and (max-width:767px){
+                @media screen and (min-width:481px) {
                     display: flex;
                     align-content: center;
-                    justify-content: center;}
-                @media screen and (min-width:768px) {
-                    display: flex;
-                    align-content: center;
-                    justify-content: center;}    
+                    justify-content: center;}  
             }
             .networks__redes{
                 width: auto;
                 display: flex;
                 flex-direction: column;
-                @media screen and (min-width:481px) and (max-width:767px){
+                @media screen and (min-width:481px){
                     width: auto;
                     padding-left: 25%;
                     display: flex;
                     flex-direction: row;}
-                @media screen and (min-width:768px) {
-                    width: auto;
-                    padding-left: 25%;
-                    display: flex;
-                    flex-direction: row;}    
                 img{
                     width: 25%;
                     padding: 1%;
@@ -96,16 +90,11 @@
                  &:hover{
                     transform: scale(1.5);
                 }
-                @media screen and (min-width:481px) and (max-width:767px){
+                @media screen and (min-width:481px) {
                     width: 35%;
                     padding: 0%;
                     position: relative;
                     left: 0%;}
-               @media screen and (min-width:768px) {
-                width: 35%;
-                padding: 0%;
-                position: relative;
-                left: 0%;}    
             }
             }
             .networks__wa{
@@ -126,14 +115,13 @@
         }
          .copyright{
             margin-bottom: 0%;
-            font-size: 12px;
+            font-size: nth($font-size,1);
             font-weight: lighter;
-            color: #6d390b;
+            color: nth($colores,4);
             text-align: center;
-            @media screen and (min-width:481px) and (max-width:767px){
-                font-size: 12px;}
-                @media screen and (min-width:768px){
-                    font-size: 14px;}   
+            @media screen and (min-width:481px){
+                font-size: nth($font-size,2);}
+                 
          }
         }
         

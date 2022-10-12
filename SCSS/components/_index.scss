@@ -1,8 +1,11 @@
+@import '../base/variables';
+@import '../base/listas';
+
 .main__index{
-    background-color: #8e3200;
+    background-color: $bg-color-pages;
     padding: 2%;
     .section__vid{
-        border: solid 3px #d7a86e;
+        border: solid 3px nth($colores,3);
         padding: 1%;
         display: flex;
         justify-content: center;

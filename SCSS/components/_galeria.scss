@@ -1,22 +1,25 @@
+@import '../base/variables';
+@import '../base/listas';
+
 .main__galery{
     width: 100%;
-    background-color: white;
+    background-color: nth($colores,6);
     padding-bottom: 2%;
     .main__galery-title{
-        color: #fcfce6;
-    background-color: #8e3200;
+    color: nth($colores,1);
+    background-color: $bg-color-pages;
     padding: 2%;
-    font-size: 14px;
-    letter-spacing: 1px;
-    word-spacing: 2.5px;
+    font-size: nth($font-size,2);
+    letter-spacing: nth($letter-spacing,1);
+    word-spacing: nth($word-spacing,1);
     text-align: center;
     @media only screen and (min-width:481px) and (max-width:767px) {
-        font-size: 16px;
-        word-spacing: 3px;
+        font-size: nth($font-size,3);
+        word-spacing: nth($word-spacing,2);
     }
     @media only screen and (min-width:768px) {
-        font-size: 18px;
-        word-spacing: 4px;
+        font-size: nth($font-size,4);
+        word-spacing: nth($word-spacing,3);
     }
     }
 
