@@ -2,169 +2,146 @@
 @import '../base/listas';
 @import '../base/mixin';
 
-.main__contact {
+.main__contact{
     width: 100%;
     background-color: $bg-color-pages;
-
-    .main__contact-text {
-        color: nth($colores, 1);
+    .main__contact-text{
+        color: nth($colores,1);
         padding: 2%;
-        font-size: nth($font-size, 2);
-        letter-spacing: nth($letter-spacing, 1);
-        word-spacing: nth($word-spacing, 2);
-
+        font-size: nth($font-size,2);
+        letter-spacing: nth($letter-spacing,1);
+        word-spacing: nth($word-spacing,2);
         @media only screen and (min-width:481px) and (max-width:767px) {
-            font-size: nth($font-size, 3);
+            font-size: nth($font-size,3);
         }
-
         @media only screen and (min-width:768px) {
             width: 70%;
-            font-size: nth($font-size, 5);
-        }
+            font-size: nth($font-size,5);
     }
-
-    .main__contact-div {
+    }
+    .main__contact-div{
         @include display-flex (flex, start, flex-start);
         @include flex-direction (flex, column);
-
+      
         @media only screen and (min-width:481px) and (max-width:767px) {
             @include display-flex (flex, space-around, center);
-
+           
         }
-
         @media only screen and (min-width:768px) {
-            @include display-flex (flex, space-around, center);
+            @include display-flex (flex, space-around, null);
             @include flex-direction (flex, row);
-
-        }
-
-        .main__contact-contact {
+        
+    }
+        .main__contact-contact{
             @media only screen and (min-width:481px) and (max-width:767px) {
                 width: 80%;
                 @include flex-direction (flex, column);
                 @include display-flex (flex, flex-start, center);
-
+      
             }
-
             @media only screen and (min-width:768px) {
                 width: 50%;
                 @include flex-direction (flex, column);
                 @include display-flex (flex, flex-start, center);
-
-            }
-
-            .main__contact-title {
-                color: nth($colores, 3);
+             
+        }
+            .main__contact-title{
+                color: nth($colores,3);
                 padding: 2%;
-                font-size: nth($font-size, 2);
+                font-size: nth($font-size,2);
                 @include flex-direction (flex, row);
                 @include display-flex (flex, space-around, center);
-
+             
                 @media only screen and (min-width:481px) and (max-width:767px) {
-                    font-size: nth($font-size, 3);
+                    font-size: nth($font-size,3);
                 }
-
                 @media only screen and (min-width:768px) {
-                    font-size: nth($font-size, 5);
+                    font-size: nth($font-size,5);
                 }
 
             }
-
-            .main__contact-formulary {
+            .main__contact-formulary{
                 list-style: none;
-                height: 80%;
-
-                @media only screen and (min-width:481px) {
-                    @include flex-direction (flex, column);
-                    @include display-flex (flex, center, center);
-                }
-
-                input {
-                    outline: none;
-
-                    &:focus {
-                        border: solid 4px nth($colores, 3);
-                        border-radius: 5px;
-                    }
-                }
+               height: 80%;
+              @media only screen and (min-width:481px) {
+                @include flex-direction (flex, column);
+                @include display-flex (flex, center, center);
+    }
+ 
+    input{
+        outline: none;
+        &:focus{
+            border: solid 4px nth($colores,3);
+            border-radius: 5px;
+        }
+    }
             }
-
-            .main__contact-thanks {
-                color: nth($colores, 1);
-                text-align: center;
-                padding: 2%;
-                font-size: nth($font-size, 2);
-                letter-spacing: nth($letter-spacing, 1);
-                word-spacing: nth($word-spacing, 2);
-
-                &:hover::after {
-                    content: "🧡";
-                }
-
-                @media only screen and (min-width:481px) and (max-width:767px) {
-                    font-size: nth($font-size, 3);
-                }
-
-                @media only screen and (min-width:768px) {
-                    font-size: nth($font-size, 5);
-                }
+            .main__contact-thanks{
+                color: nth($colores,1);
+    text-align: center;
+    padding: 2%;
+    font-size: nth($font-size,2);
+    letter-spacing: nth($letter-spacing,1);
+    word-spacing: nth($word-spacing,2);
+    &:hover::after{
+        content:"🧡";
+    }
+    @media only screen and (min-width:481px) and (max-width:767px) {
+        font-size: nth($font-size,3);
+    }
+    @media only screen and (min-width:768px) {
+        font-size: nth($font-size,5);
+    }
             }
         }
 
-        .main__contact-ubic {
-            padding: 2%;
-            padding-left: 6%;
-            width: 90%;
-            height: auto;
-            @include flex-direction (flex, column);
-            @include display-flex (flex, center, center);
-
-            @media only screen and (min-width:481px) and (max-width:767px) {
-                width: 50%;
-                padding: 1%;
-                @include display-flex (flex, center, center);
-
-            }
-
-            @media only screen and (min-width:768px) {
-                width: 40%;
-                padding-top: 0%;
-                padding-left: 1%;
-                @include display-flex (flex, flex-start, center);
-
-            }
-
-            .main__contact-title {
-                color: nth($colores, 3);
+    .main__contact-ubic{
+        padding: 2%;
+    padding-left: 6%;
+    width: 90%;
+    height: auto;
+    @include flex-direction (flex, column);
+    @include display-flex (flex, center, center);
+   
+    @media only screen and (min-width:481px) and (max-width:767px) {
+        width: 50%;
+        padding: 1%;
+        @include display-flex (flex, center, center);
+     
+    }
+    @media only screen and (min-width:768px) {
+        width: 40%;
+        padding-top: 0%;
+        padding-left: 1%;
+        @include display-flex (flex, flex-start, center);
+   
+    }
+      .main__contact-title{
+                color: nth($colores,3);
                 padding: 2%;
-                font-size: nth($font-size, 2);
+                font-size: nth($font-size,2);
                 @include flex-direction (flex, row);
                 @include display-flex (flex, space-around, center);
-
                 @media only screen and (min-width:481px) and (max-width:767px) {
-                    font-size: nth($font-size, 3);
+                    font-size: nth($font-size,3);
                 }
-
                 @media only screen and (min-width:768px) {
-                    font-size: nth($font-size, 5);
+                    font-size: nth($font-size,5);
                 }
             }
-
-            .main__contact-direc {
-                padding: 2%;
-                color: nth($colores, 3);
-                font-size: nth($font-size, 1);
-
-                @media only screen and (min-width:481px) and (max-width:767px) {
-                    font-size: nth($font-size, 2);
-                }
-
-                @media only screen and (min-width:768px) {
-                    font-size: nth($font-size, 3);
-                }
+        .main__contact-direc{
+            padding: 2%;
+            color: nth($colores,3);
+            font-size: nth($font-size,1);
+            @media only screen and (min-width:481px) and (max-width:767px) {
+                font-size: nth($font-size,2);
             }
+            @media only screen and (min-width:768px) {
+                font-size: nth($font-size,3);
+            }
+        }    
+        
 
-
-        }
+    }
     }
 }
