@@ -53,11 +53,11 @@
         @include flex-direction (flex, column);
 
         .main__know-div {
-            @include display-flex (flex, space-around, center);
+            @include display-flex (flex, space-around, null);
 
             img {
                 width: 30%;
-                @include display-flex (flex, center, center);
+                @include display-flex (flex, center, null);
                 border: solid 10px nth($colores, 6);
             }
         }

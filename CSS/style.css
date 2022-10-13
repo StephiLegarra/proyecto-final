@@ -272,13 +272,11 @@ header nav div .menu .menu-option:hover {
 .main__know .main__know-sec .main__know-div {
   display: flex;
   justify-content: space-around;
-  align-items: center;
 }
 .main__know .main__know-sec .main__know-div img {
   width: 30%;
   display: flex;
   justify-content: center;
-  align-items: center;
   border: solid 10px white;
 }
 .main__know .main__know-sec .main__know-subtitle {
