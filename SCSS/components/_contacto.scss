@@ -102,6 +102,10 @@
     height: auto;
     @include flex-direction (flex, column);
     @include display-flex (flex, center, center);
+    iframe{
+        width: 90%;
+        height: auto;
+    }
    
     @media only screen and (min-width:481px) and (max-width:767px) {
         width: 50%;
@@ -114,6 +118,10 @@
         padding-top: 0%;
         padding-left: 1%;
         @include display-flex (flex, flex-start, center);
+        iframe{
+            width: 70%;
+            height: auto;
+        }
    
     }
       .main__contact-title{

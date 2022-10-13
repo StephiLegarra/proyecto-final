@@ -66,7 +66,6 @@ header nav div .menu .menu-option:hover {
 .footer .nav__footer {
   display: flex;
   justify-content: space-between;
-  align-items: null;
 }
 .footer .nav__footer .title {
   width: 50%;
@@ -595,6 +594,10 @@ header nav div .menu .menu-option:hover {
   justify-content: center;
   align-items: center;
 }
+.main__contact .main__contact-div .main__contact-ubic iframe {
+  width: 90%;
+  height: auto;
+}
 @media only screen and (min-width: 481px) and (max-width: 767px) {
   .main__contact .main__contact-div .main__contact-ubic {
     width: 50%;
@@ -612,6 +615,10 @@ header nav div .menu .menu-option:hover {
     display: flex;
     justify-content: flex-start;
     align-items: center;
+  }
+  .main__contact .main__contact-div .main__contact-ubic iframe {
+    width: 70%;
+    height: auto;
   }
 }
 .main__contact .main__contact-div .main__contact-ubic .main__contact-title {
