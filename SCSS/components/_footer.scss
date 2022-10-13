@@ -32,7 +32,7 @@
     }
 
     .nav__footer {
-        @include display-flex (flex, space-between, center);
+        @include display-flex (flex, space-between, null);
 
         .title {
             width: 50%;
