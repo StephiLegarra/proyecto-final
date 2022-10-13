@@ -1,57 +1,69 @@
-@import '../base/variables';
 @import '../base/listas';
 
-.main__questions{
+.main__questions {
     background-image: url(/Multimedia/fondoCarpinteria1.jpeg);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
-    .main__questions-section{
-        width: 100%;
-    padding: 4%;
-    .main__questions-title{
-        color: nth($colores,2);
-        font-size: nth($font-size,4);
-        padding-bottom: 4%;
-        letter-spacing: nth($letter-spacing,1);
-        word-spacing: nth($word-spacing,2);
-        font-weight: bold;
-        text-align: center;
-        text-decoration: underline;
-        @media only screen and (min-width:481px) and (max-width:767px) {
-            font-size: nth($font-size,5);
-        letter-spacing: nth($letter-spacing,2);}
-        @media only screen and (min-width:768px) {
-            font-size: nth($font-size,6);
-            letter-spacing: nth($letter-spacing,3);
-            word-spacing: nth($word-spacing,3);
-    }
-}
 
-    .main__questions-quest {
-        color: nth($colores,2);
-        font-size: nth($font-size,2);
-        padding-bottom: 2%;
-        letter-spacing: nth($letter-spacing,1);
-        word-spacing:  nth($word-spacing,1);
-        font-weight: bold;
-        @media only screen and (min-width:481px) and (max-width:767px) {
-            font-size: nth($font-size,3); }
-    @media only screen and (min-width:768px) {
-        font-size: nth($font-size,5);
-        word-spacing:  nth($word-spacing,2);}
-    }
-    
-    .main__questions-answer{
-        color: nth($colores,5);
-        font-size: nth($font-size,2);
-        padding-bottom: 2%;
-        letter-spacing: nth($letter-spacing,1);
-        word-spacing:  nth($word-spacing,2);  
-        @media only screen and (min-width:481px) and (max-width:767px) {
-            font-size: nth($font-size,3); }
-    @media only screen and (min-width:768px) {
-        font-size: nth($font-size,5);}
-    }
+    .main__questions-section {
+        width: 100%;
+        padding: 4%;
+
+        .main__questions-title {
+            color: nth($colores, 2);
+            font-size: nth($font-size, 4);
+            padding-bottom: 4%;
+            letter-spacing: nth($letter-spacing, 1);
+            word-spacing: nth($word-spacing, 2);
+            font-weight: bold;
+            text-align: center;
+            text-decoration: underline;
+
+            @media only screen and (min-width:481px) and (max-width:767px) {
+                font-size: nth($font-size, 5);
+                letter-spacing: nth($letter-spacing, 2);
+            }
+
+            @media only screen and (min-width:768px) {
+                font-size: nth($font-size, 6);
+                letter-spacing: nth($letter-spacing, 3);
+                word-spacing: nth($word-spacing, 3);
+            }
+        }
+
+        .main__questions-quest {
+            color: nth($colores, 2);
+            font-size: nth($font-size, 2);
+            padding-bottom: 2%;
+            letter-spacing: nth($letter-spacing, 1);
+            word-spacing: nth($word-spacing, 1);
+            font-weight: bold;
+
+            @media only screen and (min-width:481px) and (max-width:767px) {
+                font-size: nth($font-size, 3);
+            }
+
+            @media only screen and (min-width:768px) {
+                font-size: nth($font-size, 5);
+                word-spacing: nth($word-spacing, 2);
+            }
+        }
+
+        .main__questions-answer {
+            color: nth($colores, 5);
+            font-size: nth($font-size, 2);
+            padding-bottom: 2%;
+            letter-spacing: nth($letter-spacing, 1);
+            word-spacing: nth($word-spacing, 2);
+
+            @media only screen and (min-width:481px) and (max-width:767px) {
+                font-size: nth($font-size, 3);
+            }
+
+            @media only screen and (min-width:768px) {
+                font-size: nth($font-size, 5);
+            }
+        }
     }
 }

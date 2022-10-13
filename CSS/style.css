@@ -47,6 +47,7 @@ header nav div .menu .menu-option:hover {
   word-spacing: 3px;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 @media screen and (min-width: 481px) and (max-width: 767px) {
   .footer div .slogan {
@@ -65,6 +66,7 @@ header nav div .menu .menu-option:hover {
 .footer .nav__footer {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 .footer .nav__footer .title {
   width: 50%;
@@ -92,10 +94,14 @@ header nav div .menu .menu-option:hover {
   list-style: none;
   font-size: 12px;
   color: black;
+  text-align: start;
   padding: 2%;
   display: flex;
   justify-content: start;
-  text-align: start;
+  align-items: center;
+  /*
+  display: flex;
+  justify-content: start;*/
 }
 .footer .nav__footer .title ul .contact__fact img {
   width: 10%;
@@ -118,8 +124,8 @@ header nav div .menu .menu-option:hover {
 @media screen and (min-width: 481px) {
   .footer .nav__footer .title .networks {
     display: flex;
-    align-content: center;
     justify-content: center;
+    align-items: center;
   }
 }
 .footer .nav__footer .title .networks__redes {
@@ -133,6 +139,8 @@ header nav div .menu .menu-option:hover {
     padding-left: 25%;
     display: flex;
     flex-direction: row;
+    /*   display: flex;
+    flex-direction: row;*/
   }
 }
 .footer .nav__footer .title .networks__redes img {
@@ -265,6 +273,7 @@ header nav div .menu .menu-option:hover {
 .main__know .main__know-sec .main__know-div {
   display: flex;
   justify-content: space-around;
+  align-items: center;
 }
 .main__know .main__know-sec .main__know-div img {
   width: 30%;
@@ -278,9 +287,10 @@ header nav div .menu .menu-option:hover {
   padding: 1%;
   font-size: 16px;
   display: flex;
-  flex-direction: row;
-  align-items: center;
+  flex-direction: column;
+  display: flex;
   justify-content: space-around;
+  align-items: center;
   padding-top: 2%;
 }
 @media only screen and (min-width: 481px) and (max-width: 767px) {
@@ -347,7 +357,8 @@ header nav div .menu .menu-option:hover {
   grid-auto-rows: 220px;
   gap: 10px;
 }
-.main__galery .carrousel img, .main__galery .carrousel iframe {
+.main__galery .carrousel img,
+.main__galery .carrousel iframe {
   width: 100%;
   height: 100%;
   padding: 2%;
@@ -472,8 +483,10 @@ header nav div .menu .menu-option:hover {
 }
 .main__contact .main__contact-div {
   display: flex;
-  flex-direction: column;
+  justify-content: start;
   align-items: flex-start;
+  display: flex;
+  flex-direction: column;
 }
 @media only screen and (min-width: 481px) and (max-width: 767px) {
   .main__contact .main__contact-div {
@@ -485,24 +498,30 @@ header nav div .menu .menu-option:hover {
 @media only screen and (min-width: 768px) {
   .main__contact .main__contact-div {
     display: flex;
-    flex-direction: row;
     justify-content: space-around;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
   }
 }
 @media only screen and (min-width: 481px) and (max-width: 767px) {
   .main__contact .main__contact-div .main__contact-contact {
     width: 80%;
     display: flex;
-    justify-content: flex-start;
     flex-direction: column;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
   }
 }
 @media only screen and (min-width: 768px) {
   .main__contact .main__contact-div .main__contact-contact {
     width: 50%;
     display: flex;
-    justify-content: flex-start;
     flex-direction: column;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
   }
 }
 .main__contact .main__contact-div .main__contact-contact .main__contact-title {
@@ -510,8 +529,10 @@ header nav div .menu .menu-option:hover {
   padding: 2%;
   font-size: 14px;
   display: flex;
-  justify-content: space-around;
   flex-direction: row;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 @media only screen and (min-width: 481px) and (max-width: 767px) {
   .main__contact .main__contact-div .main__contact-contact .main__contact-title {
@@ -530,8 +551,9 @@ header nav div .menu .menu-option:hover {
 @media only screen and (min-width: 481px) {
   .main__contact .main__contact-div .main__contact-contact .main__contact-formulary {
     display: flex;
-    justify-content: center;
     flex-direction: column;
+    display: flex;
+    justify-content: center;
     align-items: center;
   }
 }
@@ -570,13 +592,16 @@ header nav div .menu .menu-option:hover {
   height: auto;
   display: flex;
   flex-direction: column;
+  display: flex;
   justify-content: center;
+  align-items: center;
 }
 @media only screen and (min-width: 481px) and (max-width: 767px) {
   .main__contact .main__contact-div .main__contact-ubic {
     width: 50%;
     padding: 1%;
     display: flex;
+    justify-content: center;
     align-items: center;
   }
 }
@@ -587,6 +612,7 @@ header nav div .menu .menu-option:hover {
     padding-left: 1%;
     display: flex;
     justify-content: flex-start;
+    align-items: center;
   }
 }
 .main__contact .main__contact-div .main__contact-ubic .main__contact-title {
@@ -594,8 +620,10 @@ header nav div .menu .menu-option:hover {
   padding: 2%;
   font-size: 14px;
   display: flex;
-  justify-content: space-around;
   flex-direction: row;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 @media only screen and (min-width: 481px) and (max-width: 767px) {
   .main__contact .main__contact-div .main__contact-ubic .main__contact-title {

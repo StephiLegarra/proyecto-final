@@ -1,29 +1,33 @@
 @import '../base/variables';
 @import '../base/listas';
 
-header{
+header {
     background-color: $bg-color-gener;
-    nav{
-        div{
-            a{
-    .menu-logo{
-        width: 90%;
-        height: auto;
-    }
-             }
-    .menu{
-        @media screen and (min-width:768px) {
-            font-size: nth($font-size,5);
-            letter-spacing: nth($letter-spacing,1);
+
+    nav {
+        div {
+            a {
+                .menu-logo {
+                    width: 90%;
+                    height: auto;
+                }
+            }
+
+            .menu {
+                @media screen and (min-width:768px) {
+                    font-size: nth($font-size, 5);
+                    letter-spacing: nth($letter-spacing, 1);
+                }
+
+                .menu-option {
+                    color: nth($colores, 2);
+
+                    &:hover {
+                        border: solid 2px nth($colores, 2);
+                        color: nth($colores, 5);
+                    }
+                }
+            }
         }
-    .menu-option{
-        color: nth($colores,2);
-    &:hover{
-        border: solid 2px nth($colores,2);
-        color: nth($colores,5);
-    }
-}
-}
-    }
     }
 }

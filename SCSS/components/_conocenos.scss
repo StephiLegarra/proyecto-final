@@ -1,91 +1,101 @@
 @import '../base/variables';
 @import '../base/listas';
+@import '../base/mixin';
 
-.main__know{
+.main__know {
     background-color: $bg-color-pages;
     padding: 1% 0%;
-    display: flex;
-    flex-direction: column;
+    @include flex-direction (flex, column);
+
     @media only screen and (min-width:768px) {
-        display: flex;
-        flex-direction: row;
+        @include flex-direction (flex, row);
     }
-    .main__know-section{
+
+    .main__know-section {
         width: 100%;
-        padding: 2%;   
-        .main__know-title{
-            color: nth($colores,3);
+        padding: 2%;
+
+        .main__know-title {
+            color: nth($colores, 3);
             padding: 1%;
-            font-size: nth($font-size,4);
-            @media only screen and (min-width:481px) and (max-width:767px)
-             {
-                font-size: nth($font-size,6); }
-                @media only screen and (min-width:768px) 
-                {
-                    font-size: nth($font-size,7);
-                }
-            }
-        }
-     .main__know-inf{
-            color: nth($colores,1);
-            padding: 2%;
-            font-size: nth($font-size,3);
-            letter-spacing: nth($letter-spacing,1);
-            word-spacing: nth($word-spacing,1);
+            font-size: nth($font-size, 4);
+
             @media only screen and (min-width:481px) and (max-width:767px) {
-                font-size: nth($font-size,4);
-                word-spacing: nth($word-spacing,2);}
-                @media only screen and (min-width:768px) { 
-                    font-size: nth($font-size,5);
-                    word-spacing: nth($word-spacing,3);
-                }
+                font-size: nth($font-size, 6);
             }
-    
-    .main__know-sec{
-        width: 100%;
-    display: flex;
-    flex-direction: column;
-        .main__know-div{
-            display: flex;
-    justify-content: space-around;
-            img{
-                width: 30%;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                border: solid 10px nth($colores,6);
-        }}
-        .main__know-subtitle{
-            color: nth($colores,3);
-    padding: 1%;
-    font-size: nth($font-size,3);
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
-    padding-top: 2%;
-    @media only screen and (min-width:481px) and (max-width:767px) {
-        font-size: nth($font-size,5);
-    }
-    @media only screen and (min-width:768px) {
-        font-size: nth($font-size,6);
-    }
+
+            @media only screen and (min-width:768px) {
+                font-size: nth($font-size, 7);
+            }
         }
-        .main__know-article{
+    }
+
+    .main__know-inf {
+        color: nth($colores, 1);
+        padding: 2%;
+        font-size: nth($font-size, 3);
+        letter-spacing: nth($letter-spacing, 1);
+        word-spacing: nth($word-spacing, 1);
+
+        @media only screen and (min-width:481px) and (max-width:767px) {
+            font-size: nth($font-size, 4);
+            word-spacing: nth($word-spacing, 2);
+        }
+
+        @media only screen and (min-width:768px) {
+            font-size: nth($font-size, 5);
+            word-spacing: nth($word-spacing, 3);
+        }
+    }
+
+    .main__know-sec {
+        width: 100%;
+        @include flex-direction (flex, column);
+
+        .main__know-div {
+            @include display-flex (flex, space-around, center);
+
+            img {
+                width: 30%;
+                @include display-flex (flex, center, center);
+                border: solid 10px nth($colores, 6);
+            }
+        }
+
+        .main__know-subtitle {
+            color: nth($colores, 3);
+            padding: 1%;
+            font-size: nth($font-size, 3);
+            @include flex-direction (flex, column);
+            @include display-flex (flex, space-around, center);
+            padding-top: 2%;
+
+            @media only screen and (min-width:481px) and (max-width:767px) {
+                font-size: nth($font-size, 5);
+            }
+
+            @media only screen and (min-width:768px) {
+                font-size: nth($font-size, 6);
+            }
+        }
+
+        .main__know-article {
             width: 60%;
-            color: nth($colores,1);
+            color: nth($colores, 1);
             padding: 2%;
             text-align: center;
-            font-size: nth($font-size,1);
-            letter-spacing: nth($letter-spacing,1);
-            word-spacing: nth($word-spacing,1);
+            font-size: nth($font-size, 1);
+            letter-spacing: nth($letter-spacing, 1);
+            word-spacing: nth($word-spacing, 1);
+
             @media only screen and (min-width:481px) and (max-width:767px) {
-                font-size: nth($font-size,4);
-        word-spacing: nth($word-spacing,2);
+                font-size: nth($font-size, 4);
+                word-spacing: nth($word-spacing, 2);
             }
+
             @media only screen and (min-width:768px) {
-                font-size: nth($font-size,5);
-                word-spacing: nth($word-spacing,3);
+                font-size: nth($font-size, 5);
+                word-spacing: nth($word-spacing, 3);
             }
         }
     }

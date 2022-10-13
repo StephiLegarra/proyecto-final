@@ -1,28 +1,30 @@
 @import '../base/variables';
 @import '../base/listas';
+@import '../base/mixin';
 
-.main__index{
+.main__index {
     background-color: $bg-color-pages;
     padding: 2%;
-    .section__vid{
-        border: solid 3px nth($colores,3);
+
+    .section__vid {
+        border: solid 3px nth($colores, 3);
         padding: 1%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        video{
+        @include display-flex (flex, center, center);
+
+        video {
             width: 100%;
             height: auto;
         }
     }
-   .carousel-cel{
+
+    .carousel-cel {
         padding-top: 15px;
         padding-bottom: 20px;
         width: 90%;
         margin: 0 auto;
-        @media screen and (min-width:768px){   
-                display: none;
-        }
-   }
-}
 
+        @media screen and (min-width:768px) {
+            display: none;
+        }
+    }
+}
