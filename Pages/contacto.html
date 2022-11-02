@@ -6,17 +6,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- META -->
-    <meta name="description" content="Somos una empresa familiar que fabrica muebles en melamina con el diseño perfecto para tu hogar. Pedí tu presupuesto sin cargo. Veni a conocer nuestro taller en la ciudad de Tandil">
-    <meta name="keywords" content="carpinteria, mueble, muebles, melamina, diseño, hogar, presupuesto, calidad, precio, tandil, carpintero, fabricar, fabricante, empresa familiar, contacto, contactanos">
+    <meta name="description"
+        content="Somos una empresa familiar que fabrica muebles en melamina con el diseño perfecto para tu hogar. Pedí tu presupuesto sin cargo. Veni a conocer nuestro taller en la ciudad de Tandil">
+    <meta name="keywords"
+        content="carpinteria, mueble, muebles, melamina, diseño, hogar, presupuesto, calidad, precio, tandil, carpintero, fabricar, fabricante, empresa familiar, contacto, contactanos">
     <!-- OPEN GRAPH-->
-  <!-- type-->
-  <meta property="og:type" content="Web site">
-  <!-- title-->
-  <meta property="og:title" content="CARPINTERIA EZETA | Muebles en melamina | CONTACTO">
-  <!-- URL-->
-  <meta property="og:url" content="https://stephilegarra.github.io/proyecto-final/Pages/contacto.html">
-  <!-- imagen-->
-  <meta property="og:image" content="https://stephilegarra.github.io/proyecto-final/Multimedia/logo.ico"> 
+    <!-- type-->
+    <meta property="og:type" content="Web site">
+    <!-- title-->
+    <meta property="og:title" content="CARPINTERIA EZETA | Muebles en melamina | CONTACTO">
+    <!-- URL-->
+    <meta property="og:url" content="https://stephilegarra.github.io/proyecto-final/Pages/contacto.html">
+    <!-- imagen-->
+    <meta property="og:image" content="https://stephilegarra.github.io/proyecto-final/Multimedia/logo.ico">
     <!-- FAVICON-->
     <link rel="shortcut icon" href="../Multimedia/logo.ico" type="image/x-icon">
     <!-- CDN BOOTRSTRAP IMPORTANTE VA PRIMERO QUE EL CSS, PORQUE EL HTML LEE DE ARRIBA HACIA ABAJO-->
@@ -32,27 +34,28 @@
 <body class="body">
     <!-- HEADER-->
     <header>
-    <nav class="navbar navbar-expand-lg header">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">
-                <img class="menu-logo" src="../Multimedia/logo.ico" alt="Imagen del logo">
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
-                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse menu d-lg-flex justify-content-lg-end" id="navbarNavAltMarkup">
-                <div class="navbar-nav">
-                    <a class="nav-link menu-option p-5" href="../index.html">Home</a>
-                    <a class="nav-link menu-option p-5" href="../Pages/conocenos.html">Conocenos</a>
-                    <a class="nav-link menu-option p-5" href="../Pages/galeria.html">Galeria</a>
-                    <a class="nav-link menu-option p-5" href="../Pages/preguntas.html">Preguntas frecuentes</a>
-                    <a class="nav-link menu-option p-5" href="../Pages/contacto.html">Contacto</a>
+        <nav class="navbar navbar-expand-lg header">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img class="menu-logo" src="../Multimedia/logo.ico" alt="Imagen del logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse menu d-lg-flex justify-content-lg-end" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-link menu-option p-5" href="../index.html">Home</a>
+                        <a class="nav-link menu-option p-5" href="../Pages/conocenos.html">Conocenos</a>
+                        <a class="nav-link menu-option p-5" href="../Pages/galeria.html">Galeria</a>
+                        <a class="nav-link menu-option p-5" href="../Pages/preguntas.html">Preguntas frecuentes</a>
+                        <a class="nav-link menu-option p-5" href="../Pages/contacto.html">Contacto</a>
+                    </div>
                 </div>
             </div>
-        </div>
-    </nav>
-</header>
+        </nav>
+    </header>
     <!-- FIN HEADER-->
 
     <!-- MAIN -->
@@ -70,16 +73,25 @@
         <section class="main__contact-div">
             <div class="main__contact-contact">
                 <h2 class="main__contact-title"> CONTACTANOS </h2>
-                <ul class="main__contact-formulary">
-                    <li><input type="text" placeholder="NOMBRE Y APELLIDO" name="post" required></li>
-                    <li><input type="email" placeholder="EMAIL" name="post" required></li>
-                    <li><input type="number" placeholder="TELEFONO" name="post" required></li>
-                    <li><input type="text" placeholder="ESCRIBA SU CONSULTA" cols="50" rows="10" name="post"
-                            required></li>
-                    <div>
-                        <li> <input type="submit" value="Enviar" name="post"></li>
+                <form action="/server/" method="post" enctype="application/x-www-form-urlencoded"
+                    class="main__contact-formulary">
+                    <div class="formulary">
+                        <label for="nombreCompleto" id="nombreCompleto" name="nombreCompleto">Nombre completo</label>
+                        <input type="text" id="nombreCompleto" name="nombreCompleto"
+                            placeholder="Escribe tu nombre y apellido" required>
+                        <label for="email" id="email" name="email">Email</label>
+                        <input type="email" name="email" id="email" placeholder="email@gmail.com" required>
+                        <label for="numeroTelefono" id="numeroTelefono" name="numeroTelefono">Numero de teléfono</label>
+                        <input type="number" name="numeroTelefono" id="numeroTelefono" placeholder="1111111" required>
+                        <label for="comentarios" id="comentarios" name="comentarios">Comentarios</label>
+                        <textarea name="comentarios" id="comentarios" cols="30" rows="10"
+                            placeholder="Escribe tu consulta aquí"></textarea>
+                     <div>
+                            <button type="submit" class="btn btn-primary">Enviar</button>
+                        <button type="reset" class="btn btn-danger">Borrar</button>
                     </div>
-                </ul>
+                    </div>
+                </form>
 
                 <p class="main__contact-thanks"> También puedes escribirnos vía mail a ezearistain@hotmail.com o
                     comunicarte
@@ -87,14 +99,14 @@
                     <br> <br> MUCHAS GRACIAS
                 </P>
             </div>
-        </div>
+            </div>
 
             <div class="main__contact-ubic">
-                <h2 class="main__contact-title"> VENI A CONOCER NUESTRO TALLER</h2>
+                <h2 class="main__contact-title"> Te esperamos en nuestro taller</h2>
                 <iframe
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3173.904476584931!2d-59.1643544!3d-37.2973977!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x959121b99b7d3dcf%3A0x707d3d153fffb964!2sEntre%20R%C3%ADos%20117%2C%20Tandil%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1661649083023!5m2!1ses-419!2sar"
-                    style="border:0;" allowfullscreen="" loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade" title="Mapa con ubicación de nuestro taller"></iframe>
+                    style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+                    title="Mapa con ubicación de nuestro taller"></iframe>
                 <h3 class="main__contact-direc">Entre Rios 117, Tandil, CP 7000
                     <br> Buenos Aires, Argentina.
                 </h3>
@@ -114,9 +126,11 @@
             <div class="title">
                 <h3 class="contact__title"> CONTACTO </h3>
                 <ul>
-                    <li class="contact__fact"> <img src="../Multimedia/logoUbicacion.png" alt="Imagen del logo ubicación">Entre
+                    <li class="contact__fact"> <img src="../Multimedia/logoUbicacion.png"
+                            alt="Imagen del logo ubicación">Entre
                         Rios 117, Tandil</li>
-                    <li class="contact__fact"> <img src="../Multimedia/logoTelefono.png" alt="Imagen del logo teléfono">(249) 4
+                    <li class="contact__fact"> <img src="../Multimedia/logoTelefono.png"
+                            alt="Imagen del logo teléfono">(249) 4
                         322040</li>
                     <li class="contact__fact"> <img src="../Multimedia/logoMail.png"
                             alt="Imagen del logo mail">ezearistain@hotmail.com </li>

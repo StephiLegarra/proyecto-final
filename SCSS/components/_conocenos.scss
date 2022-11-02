@@ -56,9 +56,10 @@
             @include display-flex (flex, space-around, null);
 
             img {
-                width: 30%;
+                width: 40%;
                 @include display-flex (flex, center, null);
                 border: solid 10px nth($colores, 6);
+                border-radius: 50%;
             }
         }
 
