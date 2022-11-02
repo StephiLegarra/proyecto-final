@@ -2,16 +2,14 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-&::selection{
-    background-color: rgba(0, 0, 0, 0.5);
-    color: white;
-}
+
+    &::selection {
+        background-color: rgba(0, 0, 0, 0.5);
+        color: white;
+    }
 }
 
 @font-face {
-        font-family: "LEMONMILK";
-        src: url(/Font/LEMONMILK-Light.otf);
-    }
-
-
-
+    font-family: "LEMONMILK";
+    src: url(/Font/LEMONMILK-Light.otf);
+}

@@ -47,7 +47,7 @@
                     font-size: nth($font-size, 3);
                     letter-spacing: nth($letter-spacing, 1);
                     word-spacing: nth($word-spacing, 3);
-                   
+
                 }
 
                 @media screen and (min-width:768px) {
@@ -57,7 +57,9 @@
                 }
             }
 
-            ul { padding-left: 4%;
+            ul {
+                padding-left: 4%;
+
                 .contact__fact {
                     list-style: none;
                     font-size: nth($font-size, 1);
@@ -74,6 +76,7 @@
 
                     @media screen and (min-width:481px) and (max-width:767px) {
                         font-size: nth($font-size, 2);
+
                         img {
                             width: 12%;
                         }
@@ -81,6 +84,7 @@
 
                     @media screen and (min-width:768px) {
                         font-size: nth($font-size, 3);
+
                         img {
                             width: 10%;
                         }

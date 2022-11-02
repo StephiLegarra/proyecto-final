@@ -88,10 +88,11 @@
                         letter-spacing: nth($letter-spacing, 1);
                         word-spacing: nth($word-spacing, 1);
                     }
+
                     input,
                     textarea {
                         outline: none;
-                        
+
                         &:focus {
                             border: solid 4px nth($colores, 3);
                             border-radius: 5px;
