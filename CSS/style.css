@@ -402,7 +402,7 @@ header nav div .menu .menu-option:hover {
 }
 
 .main__questions {
-  background-image: url(/multimedia/fondoCarpinteria1.jpeg);
+  background-image: url(../multimedia/fondoCarpinteria1.jpeg);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
